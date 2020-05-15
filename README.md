@@ -52,12 +52,12 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Build a back-end API using C#/.NET Core and MySQL with READ functionality.
       - [x] Read a sentence by sending the sentence as a query parameter and the API will return the translated sentence.
   - [x] Design a component diagram for the front end using Draw.io.
-  - [ ] Build a front-end JavaScript/React application that allows users to enter a sentence and display the translated sentence.
-      - [ ] The default view will be a form with a single text box and a submit button.
-      - [ ] The user will be able to enter a sentence into the text box and submit it.
-      - [ ] There will be a maximum number of 50 characters in a sentence.
-      - [ ] Upon submission, the application will call the API to read the sentence.
-      - [ ] The application will display the returned API response as a string.
+  - [x] Build a front-end JavaScript/React application that allows users to enter a sentence and display the translated sentence.
+      - [x] The default view will be a form with a single text box and a submit functionality.
+      - [x] The user will be able to enter a sentence into the text box and submit it.
+      - [x] There will be a maximum number of 50 characters in a sentence.
+      - [x] Upon submission, the application will call the API to read the sentence.
+      - [x] The application will display the returned API response as a string.
 
 <div align=center>
 
@@ -86,9 +86,9 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Use Quill's basic text editor for application UI.
   - [ ] Apply Quill's toolbar.
   - [ ] Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.
-  - [ ] Users can enter longer sentences (max 200 characters per sentence).
-  - [ ] Users can enter a paragraph (max 1000 characters).
-  - [ ] There's an unlimited number of characters a user can enter.
+  - [x] Users can enter longer sentences (max 200 characters per sentence).
+  - [x] Users can enter a paragraph (max 1000 characters).
+  - [x] There's an unlimited number of characters a user can enter.
   - [ ] Add an "About" section to the front end.
   - [ ] Add a footer to the front end with a link to my GitHub repo.
   - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
@@ -97,7 +97,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Users can update existing terms via the front-end application.
   - [ ] Warn users to be careful when translating real patient information to prevent violating their privacy (HIPAA).
   - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
-  - [ ] The API can translate live/real-time.
+  - [x] The API can translate live/real-time.
   - [ ] Apply Swagger API or add Views to API for http routes documentation.
   - [ ] Create an API key for users.
   - [ ] Use Redux in case the application's scale of state gets very large.

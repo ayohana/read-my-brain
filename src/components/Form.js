@@ -2,18 +2,15 @@ import React from 'react';
 
 function Form(props) {
 
-  const handleInputSubmission = event => {
+  const handleLiveTranslation = event => {
     event.preventDefault();
-    props.onFormSubmit(event.target.inputText.value);
+    props.onFormSubmit(event.target.value);
   }
-
 
   return (
     <React.Fragment>
       <h1>This is a Form</h1>
-      <form onSubmit={handleInputSubmission}>
-        <input type="text" name="inputText" placeholder="84F pt needs BG ACHS" />
-      </form>
+      <input onInput={handleLiveTranslation} type="text" name="inputText" placeholder="84F pt needs BG ACHS" />
     </React.Fragment>
   );
 }
