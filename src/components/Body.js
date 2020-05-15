@@ -15,10 +15,14 @@ function Body() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [translation, setTranslation] = useState("");
+  const [inputToTranslate, setInputToTranslate] = useState("");
 
 
   // GET TRANSLATION
-  let inputToTranslate = "84F Hx";
+  const handleTranslation = (inputToTranslate) => {
+    setInputToTranslate(inputToTranslate);
+  }
+
   useEffect(() => {
     const requestOptions = {
       method: "POST",
@@ -34,6 +38,7 @@ function Body() {
           setIsLoaded(true);
           setTranslation(result);
         }),
+      // Note from React Docs: it's important to handle errors here instead of a catch() block so that we don't swallow exceptions from actual bugs in components
       (error) => {
         setIsLoaded(true);
         setError(error);
@@ -41,27 +46,28 @@ function Body() {
     )
   })
 
-  // let currentlyVisibleMessage = "";
-  // const setVisibility = (function() {
-  //   if (error) {
-  //     currentlyVisibleMessage = `Error: ${error}`;
-  //   } else if (!isLoaded) {
-  //     currentlyVisibleMessage = `Loading...`;
-  //   } else {
-  //     currentlyVisibleMessage = "";
-  //   }
-  // })();
+  let currentlyVisibleMessage = "";
+  if (error) {
+    currentlyVisibleMessage = <p>Error occurred: {error}</p>;
+  } else if (!isLoaded) {
+    currentlyVisibleMessage = <p>Loading...</p>;
+  } else {
+    currentlyVisibleMessage = <p></p>;
+  }
 
   return (
     <React.Fragment>
       <h1>This is a Body</h1>
       <div>
-
-        <p>Translation: {translation}</p>
+        {currentlyVisibleMessage}
       </div>
       <div style={columnsStyle}>
-        <Form />
-        <Translation />
+        <div>
+          <Form onFormSubmit={handleTranslation} />
+        </div>
+        <div>
+          <Translation translation={translation} />
+        </div>
       </div>
     </React.Fragment>
   );
