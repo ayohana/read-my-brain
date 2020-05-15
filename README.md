@@ -92,6 +92,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Apply Swagger API or add Views to API for http routes documentation.
   - [ ] Create an API key for users.
   - [ ] Use Redux in case the application's scale of state gets very large.
+  - [ ] Share the application by posting in a nursing forum.
 
 </details>
 
@@ -101,17 +102,13 @@ No known bugs at this time.
 
 ## Installation Instructions
 
-<!-- ### For Local Development
+### For Local Development
 
 * Clone this [repository](https://github.com/ayohana/read-my-brain.git/)
 * Open the `Command Line Interface` and enter the following:
   * `cd read-my-brain` to navigate into the repository.
   * `npm install` to install all necessary plug-ins.
-  * `npm start` to start the application. -->
-
-_Coming up soon!_
-
-
+  * `npm start` to start the application.
 
 ## Screenshots
 
@@ -124,21 +121,31 @@ _Coming up soon!_
 
 ## Technologies
 
-<!-- * C#
+### Front End
+
+* [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
+
+### Back End API
+
+* C#
 * [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/) (Windows OS)
 * [MySQL](https://dev.mysql.com/downloads/file/?id=484919) (Windows OS)
 * [EF Core](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql)
 * [Postman](https://www.postman.com/downloads/)
 * [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
-* [Draw.io](https://app.diagrams.net/) -->
+* [Draw.io](https://app.diagrams.net/)
 
 ## Resources
 
 * [My Capstone Project Proposal](https://docs.google.com/document/d/1bxW7XzQk9xxoDU-CSc2oWtsvJcJJNuBybUBFhglaJDo/edit?usp=sharing)
+* [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
 
-### Front-End Web App
+### Front End
 
-### Back-End API
+_Coming up soon!_
+
+### Back End API
+
 * [Tutorial: Build an ASP.NET Core and SQL Database app in Azure App Service on Windows](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb)
   * [Tenant API](https://github.com/ayohana/TenantAPI.git) - a successful test project for deploying SQL database and .NET app using Azure App Service
   * [Azure Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
@@ -151,7 +158,7 @@ _Coming up soon!_
 
 Found a bug, broken feature or a brain fart? Let me know!
 
-Adela's email: [adela.yohana@gmail.com](mailto:adela.yohana@gmail.com)
+[adela.yohana@gmail.com](mailto:adela.yohana@gmail.com)
 
 ## License
 
