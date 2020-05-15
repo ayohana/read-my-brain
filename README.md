@@ -86,6 +86,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Users can enter longer sentences (max 200 characters per sentence).
   - [x] Users can enter a paragraph (max 1000 characters).
   - [x] There's an unlimited number of characters a user can enter.
+  - [ ] Refactor React component diagram
   - [ ] Users can copy special characters and insert them into their input text. For instance, c̅ for with, ā for before and p̄ for after.
   - [ ] Add an "About" section to the front end.
   - [ ] Add a footer to the front end with a link to my GitHub repo.

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Translation(props) {
   return (
     <React.Fragment>
-      <h1>This is a Translation</h1>
+      {/* <h1>This is a Translation</h1> */}
       <p>{props.translation}</p>
     </React.Fragment>
   );

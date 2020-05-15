@@ -9,8 +9,8 @@ function Form(props) {
 
   return (
     <React.Fragment>
-      <h1>This is a Form</h1>
-      <input onInput={handleLiveTranslation} type="text" name="inputText" placeholder="84F pt needs BG ACHS" />
+      {/* <h1>This is a Form</h1> */}
+      <input onInput={handleLiveTranslation} type="text" name="inputText" placeholder="Write something here..." />
     </React.Fragment>
   );
 }

@@ -57,7 +57,7 @@ function Body() {
 
   return (
     <React.Fragment>
-      <h1>This is a Body</h1>
+      {/* <h1>This is a Body</h1> */}
       <div>
         {currentlyVisibleMessage}
       </div>
