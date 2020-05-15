@@ -16,21 +16,24 @@ function Body() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [translation, setTranslation] = useState("");
 
-  let inputToTranslate = "84F Hx";
 
+  // GET TRANSLATION
+  let inputToTranslate = "84F Hx";
   useEffect(() => {
     const requestOptions = {
       method: "POST",
-      header: { "Content-Type": "application/json" },
-      body: inputToTranslate
+      headers: { 
+        "Accept": "application/json", 
+        "Content-Type": "application/json" 
+      },
+      body: JSON.stringify(inputToTranslate)
     }
     fetch("https://readmybrain.azurewebsites.net/api/translate", requestOptions)
-      .then(response => response.json())
-      .then((jsonifiedResponse) => {
-        console.log(jsonifiedResponse);
-        setIsLoaded(true);
-        setTranslation(jsonifiedResponse);
-      },
+      .then(response => response.json()
+        .then(result => {
+          setIsLoaded(true);
+          setTranslation(result);
+        }),
       (error) => {
         setIsLoaded(true);
         setError(error);
