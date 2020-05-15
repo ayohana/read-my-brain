@@ -51,12 +51,21 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Design the database structure using Draw.io.
   - [x] Build a back-end API using C#/.NET Core and MySQL with READ functionality.
       - [x] Read a sentence by sending the sentence as a query parameter and the API will return the translated sentence.
+  - [x] Design a component diagram for the front end using Draw.io.
   - [ ] Build a front-end JavaScript/React application that allows users to enter a sentence and display the translated sentence.
       - [ ] The default view will be a form with a single text box and a submit button.
       - [ ] The user will be able to enter a sentence into the text box and submit it.
       - [ ] There will be a maximum number of 50 characters in a sentence.
       - [ ] Upon submission, the application will call the API to read the sentence.
       - [ ] The application will display the returned API response as a string.
+
+<div align=center>
+
+  #### MVP React Component Diagram
+
+  <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
+
+</div>
 
 </details>
 
@@ -93,6 +102,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Create an API key for users.
   - [ ] Use Redux in case the application's scale of state gets very large.
   - [ ] Share the application by posting in a nursing forum.
+  - [ ] Application offers light and dark mode.
 
 </details>
 
@@ -124,6 +134,15 @@ _Coming up soon!_
 ### Front End
 
 * [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
+* HTML
+* CSS
+* JavaScript
+* React
+* Markdown
+* [Draw.io](https://app.diagrams.net/)
+* _npm*_
+
+_*Open `package.json` file to see the complete list of all node modules._
 
 ### Back End API
 
