@@ -1,68 +1,160 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align=center>
 
-## Available Scripts
+# [Read My Brain](https://github.com/ayohana/read-my-brain.git/)
 
-In the project directory, you can run:
+#### Capstone Project for [Epicodus](https://www.epicodus.com/), 05.15.2020
 
-### `npm start`
+#### By [**Adela Darmansyah**](https://github.com/ayohana/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[About](#About) | [What Brain](##What-Brain) | [Whose Brain](#Whose-Brain) | [Minimum Viable Product](#Minimum-Viable-Product) | [Future Product Roadmap](#Future-Product-Roadmap)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Bugs](#Known-Bugs) | [Installation Instructions](#Installation-Instructions) | [Screenshots](#Screenshots)  | [Technologies](#Technologies) | [Resources](#Resources) | [Contact and Support](#Contact-and-Support) | [License](#License)
 
-### `npm test`
+![GitHub](https://img.shields.io/github/license/ayohana/read-my-brain-api?color=%23DE98B2&style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/read-my-brain-api/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/read-my-brain-api?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/read-my-brain-api?color=%23DE98B2&style=for-the-badge)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
+## About
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**A web application that uses [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/) for translating indecipherable nursing brain jargons into simple, readable text.**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## What Brain
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For this project, I will be referring to nursing 'brain' sheets--or in the nursing world, simply known as _brains_. So what are these brains? **Nursing brains** are report sheets that contain handwritten information (most often chicken scratch) to remember about their patients. In a typical shift change routine in a hospital, a nurse only has 20 minutes to receive verbal report from the previous nurse and write down everything they need to know about all five patients assigned to them. Details on their diagnosis, medical history, current symptoms, lab values, medication administration times, treatment schedule, discharge plan, their preference of filling up a water pitcher with three quarters ice and a quarter water with two straws are among many things nurses have to write down for each patient within a few minutes. Nurses and other healthcare providers have to start using a whole lot of acronyms to write things down efficiently. Here's an example:
 
-### `npm run eject`
+> `````
+> 84F DNR pt from ED is A&Ox2
+> c̅ Hx HTN, DM, RTKA & Ax pnc
+> will need CXR STAT.
+> `````
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Read My Brain** will translate this into layman's terms:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> `````
+> 84 year old female Do Not Resuscitate patient from Emergency Department is alert and oriented x2
+> with history of hypertension, diabetes mellitus, right total knee arthroplasty and allergy to penicillin
+> will need chest x-ray immediately.
+> `````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Whose Brain
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Users are primarily going to be **future health providers**, including nursing students and new nurses. Inspired by my own nursing experience, listed below are my **goals** for this project:
+1. To help future caregivers understand medical charts quicker, better, easier and make their learning less stressful.
+2. To enable nursing students and new nurses keep up with their preceptors' brains.
+3. To empower future nurses via Read My Brain.
 
-## Learn More
+## Minimum Viable Product
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+  <summary>See what's under construction!</summary>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - [x] Design the database structure using Draw.io.
+  - [x] Build a back-end API using C#/.NET Core and MySQL with READ functionality.
+      - [x] Read a sentence by sending the sentence as a query parameter and the API will return the translated sentence.
+  - [ ] Build a front-end JavaScript/React application that allows users to enter a sentence and display the translated sentence.
+      - [ ] The default view will be a form with a single text box and a submit button.
+      - [ ] The user will be able to enter a sentence into the text box and submit it.
+      - [ ] There will be a maximum number of 50 characters in a sentence.
+      - [ ] Upon submission, the application will call the API to read the sentence.
+      - [ ] The application will display the returned API response as a string.
 
-### Code Splitting
+</details>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Future Product Roadmap
 
-### Analyzing the Bundle Size
+<details>
+  <summary>Expand to see stretch goals!</summary>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  - [x] Build a back-end API using C#/.NET Core and MySQL with full CRUD functionality.
+      - [x] Create a new term and its abbreviation into the API's database.
+      - [x] Read a sentence by sending the sentence as a query parameter and the API will return the translated sentence.
+      - [x] Update details of an term.
+      - [x] Delete an term.
+  - [x] Enable querying special characters. For instance, c̅ for with, ā for before and p̄ for after.
+  - [x] Deploy API's database via Azure.
+  - [x] Deploy the back-end API via Azure.
+  - [ ] Deploy the front-end application via Firebase.
+  - [ ] Use Quill's basic text editor for application UI.
+  - [ ] Apply Quill's toolbar.
+  - [ ] Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.
+  - [ ] Users can enter longer sentences (max 200 characters per sentence).
+  - [ ] Users can enter a paragraph (max 1000 characters).
+  - [ ] There's an unlimited number of characters a user can enter.
+  - [ ] Add an "About" section to the front end.
+  - [ ] Add a footer to the front end with a link to my GitHub repo.
+  - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
+  - [ ] Users can copy the translated result with a click of a button.
+  - [ ] Users can add a new term via the front-end application for open contribution.
+  - [ ] Users can update existing terms via the front-end application.
+  - [ ] Warn users to be careful when translating real patient information to prevent violating their privacy (HIPAA).
+  - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
+  - [ ] The API can translate live/real-time.
+  - [ ] Apply Swagger API or add Views to API for http routes documentation.
+  - [ ] Create an API key for users.
+  - [ ] Use Redux in case the application's scale of state gets very large.
 
-### Making a Progressive Web App
+</details>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Known Bugs
 
-### Advanced Configuration
+No known bugs at this time.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Installation Instructions
 
-### Deployment
+<!-- ### For Local Development
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+* Clone this [repository](https://github.com/ayohana/read-my-brain.git/)
+* Open the `Command Line Interface` and enter the following:
+  * `cd read-my-brain` to navigate into the repository.
+  * `npm install` to install all necessary plug-ins.
+  * `npm start` to start the application. -->
 
-### `npm run build` fails to minify
+_Coming up soon!_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## Screenshots
+
+<!-- API Database Structure:
+
+![Read My Brain API's Database Structure created using Draw.io](./Images/read-my-brain-api-database-structure.png/) -->
+
+_Coming up soon!_
+
+
+## Technologies
+
+<!-- * C#
+* [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/) (Windows OS)
+* [MySQL](https://dev.mysql.com/downloads/file/?id=484919) (Windows OS)
+* [EF Core](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql)
+* [Postman](https://www.postman.com/downloads/)
+* [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
+* [Draw.io](https://app.diagrams.net/) -->
+
+## Resources
+
+* [My Capstone Project Proposal](https://docs.google.com/document/d/1bxW7XzQk9xxoDU-CSc2oWtsvJcJJNuBybUBFhglaJDo/edit?usp=sharing)
+
+### Front-End Web App
+
+### Back-End API
+* [Tutorial: Build an ASP.NET Core and SQL Database app in Azure App Service on Windows](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb)
+  * [Tenant API](https://github.com/ayohana/TenantAPI.git) - a successful test project for deploying SQL database and .NET app using Azure App Service
+  * [Azure Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+  * [Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest#install-or-update)
+* [Tutorial: Building an API](https://www.learnhowtoprogram.com/c-and-net/building-an-api)
+* [Queries in LINQ to Entities: Method-Based Query Syntax](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities#method-based-query-syntax)
+* [Strings in C# - Microsoft Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
+
+## Contact and Support
+
+Found a bug, broken feature or a brain fart? Let me know!
+
+Adela's email: [adela.yohana@gmail.com](mailto:adela.yohana@gmail.com)
+
+## License
+
+This application is licensed under the MIT license.
+
+Copyright (c) 2020 **Adela Darmansyah**
