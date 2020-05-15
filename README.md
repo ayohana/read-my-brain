@@ -83,12 +83,10 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Deploy API's database via Azure.
   - [x] Deploy the back-end API via Azure.
   - [ ] Deploy the front-end application via Firebase.
-  - [ ] Use Quill's basic text editor for application UI.
-  - [ ] Apply Quill's toolbar.
-  - [ ] Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.
   - [x] Users can enter longer sentences (max 200 characters per sentence).
   - [x] Users can enter a paragraph (max 1000 characters).
   - [x] There's an unlimited number of characters a user can enter.
+  - [ ] Users can copy special characters and insert them into their input text. For instance, c̅ for with, ā for before and p̄ for after.
   - [ ] Add an "About" section to the front end.
   - [ ] Add a footer to the front end with a link to my GitHub repo.
   - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
@@ -104,6 +102,11 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Share the application by posting in a nursing forum.
   - [ ] Use a React UI library such as React Semantic UI or Material UI.
   - [ ] Application offers light and dark mode.
+  - [x] ~~Use Quill's basic text editor for application UI.~~
+  - [x] ~~Apply Quill's toolbar.~~
+  - [x] ~~Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.~~
+
+  _Note: Quill does not have an event listener that will help with the live translation feature therefore refactored stretch goals are added._
 
 </details>
 
@@ -159,13 +162,14 @@ _*Open `package.json` file to see the complete list of all node modules._
 
 * [My Capstone Project Proposal](https://docs.google.com/document/d/1bxW7XzQk9xxoDU-CSc2oWtsvJcJJNuBybUBFhglaJDo/edit?usp=sharing)
 * [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
-* [AJAX and APIs in React](https://reactjs.org/docs/faq-ajax.html)
-* [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
-* [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 
 ### Front End
 
-_Coming up soon!_
+* [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
+* [AJAX and APIs in React](https://reactjs.org/docs/faq-ajax.html)
+* [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+* [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+* [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
 
 ### Back End API
 
