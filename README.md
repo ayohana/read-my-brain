@@ -102,6 +102,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Create an API key for users.
   - [ ] Use Redux in case the application's scale of state gets very large.
   - [ ] Share the application by posting in a nursing forum.
+  - [ ] Use a React UI library such as React Semantic UI or Material UI.
   - [ ] Application offers light and dark mode.
 
 </details>
@@ -137,9 +138,9 @@ _Coming up soon!_
 * HTML
 * CSS
 * JavaScript
-* React
-* Markdown
+* [React](https://reactjs.org/)
 * [Draw.io](https://app.diagrams.net/)
+* Markdown
 * _npm*_
 
 _*Open `package.json` file to see the complete list of all node modules._
@@ -158,6 +159,9 @@ _*Open `package.json` file to see the complete list of all node modules._
 
 * [My Capstone Project Proposal](https://docs.google.com/document/d/1bxW7XzQk9xxoDU-CSc2oWtsvJcJJNuBybUBFhglaJDo/edit?usp=sharing)
 * [Read My Brain API](https://github.com/ayohana/read-my-brain-api.git/)
+* [AJAX and APIs in React](https://reactjs.org/docs/faq-ajax.html)
+* [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+* [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 
 ### Front End
 
