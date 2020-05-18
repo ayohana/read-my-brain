@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 function Translation(props) {
   return (
     <React.Fragment>
-      {/* <h1>This is a Translation</h1> */}
+      <p>{props.currentlyVisibleMessage}</p>
+      <br />
       <p>{props.translation}</p>
     </React.Fragment>
   );
 }
 
 Translation.propTypes = {
+  currentlyVisibleMessage: PropTypes.string,
   translation: PropTypes.string
 }
 

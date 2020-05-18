@@ -180,6 +180,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
 * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
+* [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 
 ### Back End API
 

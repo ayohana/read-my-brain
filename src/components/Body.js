@@ -3,6 +3,7 @@ import Form from './Form';
 import Translation from './Translation';
 
 const columnsStyle = {
+  backgroundColor: 'rgb(250,250,225)',
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   gridColumnGap: '10px',
@@ -48,25 +49,21 @@ function Body() {
 
   let currentlyVisibleMessage = "";
   if (error) {
-    currentlyVisibleMessage = <p>Error occurred: {error}</p>;
+    currentlyVisibleMessage = "Error occurred: {error}";
   } else if (!isLoaded) {
-    currentlyVisibleMessage = <p>Loading...</p>;
+    currentlyVisibleMessage = "Loading...";
   } else {
-    currentlyVisibleMessage = <p></p>;
+    currentlyVisibleMessage = "";
   }
 
   return (
     <React.Fragment>
-      {/* <h1>This is a Body</h1> */}
-      <div>
-        {currentlyVisibleMessage}
-      </div>
       <div style={columnsStyle}>
         <div>
           <Form onFormSubmit={handleTranslation} />
         </div>
         <div>
-          <Translation translation={translation} />
+          <Translation currentlyVisibleMessage={currentlyVisibleMessage} translation={translation} />
         </div>
       </div>
     </React.Fragment>
