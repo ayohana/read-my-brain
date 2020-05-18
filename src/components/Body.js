@@ -26,7 +26,6 @@ function Body() {
   const [translation, setTranslation] = useState("");
   const [inputToTranslate, setInputToTranslate] = useState("");
 
-
   // GET TRANSLATION
   const handleTranslation = (inputToTranslate) => {
     setInputToTranslate(inputToTranslate);

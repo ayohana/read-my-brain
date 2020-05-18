@@ -88,16 +88,17 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] There's an unlimited number of characters a user can enter.
   - [x] The API can translate live/real-time.
   - [x] Users can copy special characters and insert them into their input text. For instance, icons c̅ for with, ā for before and p̄ for after.
+  - [x] Use custom CSS styling instead of styling libraries.
   - [ ] Insert special characters automatically to input text area on clicking them.
   - [x] Refactor `<input>` to `<textarea>` to enable resizing the text box.
   - [x] Display ~~tooltip~~message for successfully copying~~/inserting~~ icons.
+  - [x] Add CSS animation to display "copied" message.
+  - [x] Users can copy the translated result ~~with a click of a button~~by clicking the translated text.
   - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
   - [ ] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed).
   - [ ] Refactor React component diagram.
       - [ ] Add an "About" section to the front end.
       - [ ] Add a footer to the front end with a link to my GitHub repo.
-      - [ ] Use custom CSS styling instead of styling libraries.
-      - [ ] Users can copy the translated result with a click of a button.
       - [ ] Users can add new terms via the front-end application for open contribution.
       - [ ] Users can update existing terms via the front-end application.
       - [ ] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
@@ -181,6 +182,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 * [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 * [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
+* [HTML onmouseup Event](https://www.w3schools.com/jsref/event_onmouseup.asp)
 * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
 * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)

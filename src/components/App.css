@@ -32,3 +32,16 @@ textarea:hover {
 .icon:hover {
   box-shadow: 0px 0px 5px #888888;
 }
+
+#translation:hover {
+  text-shadow: 0px 0px 2px #888888;
+}
+
+@keyframes fadeinout {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

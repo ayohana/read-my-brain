@@ -15,7 +15,9 @@ const copiedMessageStyle = {
   color: 'rgb(85,188,255)',
   marginLeft: '0.5em',
   fontSize: '0.9em',
-  textShadow: '0.4px 0.4px #888888'
+  textShadow: '0.4px 0.4px #888888',
+  animation: 'fadeinout 2s linear forwards',
+  opacity: '0'
 }
 
 function Form(props) {
@@ -40,19 +42,19 @@ function Form(props) {
     <React.Fragment>
       <div style={formContainerStyle}>
         <div style={iconsContainerStyle}>
-          <CopyToClipboard text="c̅" onCopy={() => setCopied(true)}>
+          <CopyToClipboard text="c̅" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">c̅</span>
           </CopyToClipboard>
-          <CopyToClipboard text="ā" onCopy={() => setCopied(true)}>
+          <CopyToClipboard text="ā" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">ā</span>
           </CopyToClipboard>
-          <CopyToClipboard text="p̄" onCopy={() => setCopied(true)}>
+          <CopyToClipboard text="p̄" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">p̄</span>
           </CopyToClipboard>
-          <CopyToClipboard text="↑" onCopy={() => setCopied(true)}>
+          <CopyToClipboard text="↑" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">↑</span>
           </CopyToClipboard>
-          <CopyToClipboard text="↓" onCopy={() => setCopied(true)}>
+          <CopyToClipboard text="↓" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">↓</span>
           </CopyToClipboard>
           {copied ? <span style={copiedMessageStyle}>Copied!</span> : null}
@@ -64,7 +66,7 @@ function Form(props) {
           <span className="icon" onClick={() => handleAppendToInputText("↓")}>↓</span> */}
         </div>
         <br />
-        <textarea onInput={handleLiveTranslation} onChange={() => setCopied(false)} type="text" id="inputText" rows="10" placeholder="Write something here...">
+        <textarea onInput={handleLiveTranslation} type="text" id="inputText" rows="10" placeholder="Write something here...">
         </textarea>
       </div>
     </React.Fragment>
