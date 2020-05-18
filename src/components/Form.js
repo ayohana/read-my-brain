@@ -3,7 +3,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const formContainerStyle = {
   backgroundColor: 'rgb(250,250,225)',
-  margin: '10px'
+  margin: '20px'
 }
 
 const iconsContainerStyle = {
@@ -39,7 +39,8 @@ function Form(props) {
           </CopyToClipboard>
         </div>
         <br />
-        <input onInput={handleLiveTranslation} type="text" name="inputText"placeholder="Write something here...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Translation starts here: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+        <textarea onInput={handleLiveTranslation} type="text" name="inputText" rows="40" placeholder="Write something here..." >
+        </textarea>
       </div>
     </React.Fragment>
   );

@@ -89,7 +89,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] The API can translate live/real-time.
   - [x] Users can copy special characters and insert them into their input text. For instance, icons c̅ for with, ā for before and p̄ for after.
   - [ ] Insert special characters automatically to input text area on clicking them.
-  - [ ] Refactor `<input>` to `<textarea>` to enable resizing the text box.
+  - [x] Refactor `<input>` to `<textarea>` to enable resizing the text box.
   - [ ] Add a tooltip for successfully copying/inserting icons.
   - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
   - [ ] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed).
@@ -184,6 +184,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
 * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
+* [Parks in Redux](https://github.com/ayohana/parks-redux.git) - a successful test project for deploying React app using Netlify
 
 ### Back End API
 
