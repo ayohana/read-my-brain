@@ -2,7 +2,7 @@
 
 # [Read My Brain](https://github.com/ayohana/read-my-brain.git/)
 
-#### Capstone Project for [Epicodus](https://www.epicodus.com/), 05.15.2020
+#### Capstone Project for [Epicodus](https://www.epicodus.com/), 05.15.2020 - _present_
 
 #### By [**Adela Darmansyah**](https://github.com/ayohana/)
 
@@ -46,7 +46,7 @@ Users are primarily going to be **future health providers**, including nursing s
 ## Minimum Viable Product
 
 <details>
-  <summary>See what's under construction!</summary>
+  <summary>Expand to see completed MVP goals!</summary>
 
   - [x] Design the database structure using Draw.io.
   - [x] Build a back-end API using C#/.NET Core and MySQL with READ functionality.
@@ -59,20 +59,20 @@ Users are primarily going to be **future health providers**, including nursing s
       - [x] Upon submission, the application will call the API to read the sentence.
       - [x] The application will display the returned API response as a string.
 
-<div align=center>
+  <div align=center>
 
-  #### MVP React Component Diagram
+    #### MVP React Component Diagram
 
-  <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
+    <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
 
-</div>
+  </div>
 
 </details>
 
 ## Future Product Roadmap
 
 <details>
-  <summary>Expand to see stretch goals!</summary>
+  <summary>See stretch goals under construction!</summary>
 
   - [x] Build a back-end API using C#/.NET Core and MySQL with full CRUD functionality.
       - [x] Create a new term and its abbreviation into the API's database.
@@ -82,32 +82,36 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Enable querying special characters. For instance, c̅ for with, ā for before and p̄ for after.
   - [x] Deploy API's database via Azure.
   - [x] Deploy the back-end API via Azure.
-  - [ ] Deploy the front-end application via Firebase.
+  - [ ] Deploy the front-end application via Firebase/Netlify.
   - [x] Users can enter longer sentences (max 200 characters per sentence).
   - [x] Users can enter a paragraph (max 1000 characters).
   - [x] There's an unlimited number of characters a user can enter.
-  - [ ] Refactor React component diagram
-  - [ ] Users can copy special characters and insert them into their input text. For instance, c̅ for with, ā for before and p̄ for after.
-  - [ ] Add an "About" section to the front end.
-  - [ ] Add a footer to the front end with a link to my GitHub repo.
-  - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
-  - [ ] Users can copy the translated result with a click of a button.
-  - [ ] Users can add a new term via the front-end application for open contribution.
-  - [ ] Users can update existing terms via the front-end application.
-  - [ ] Warn users to be careful when translating real patient information to prevent violating their privacy (HIPAA).
-  - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
   - [x] The API can translate live/real-time.
-  - [ ] Apply Swagger API or add Views to API for http routes documentation.
+  - [ ] Users can copy special characters and insert them into their input text. For instance, icons c̅ for with, ā for before and p̄ for after.
+  - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
+  - [ ] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed).
+  - [ ] Refactor React component diagram.
+      - [ ] Add an "About" section to the front end.
+      - [ ] Add a footer to the front end with a link to my GitHub repo.
+      - [ ] Use custom CSS styling instead of styling libraries.
+      - [ ] Users can copy the translated result with a click of a button.
+      - [ ] Users can add new terms via the front-end application for open contribution.
+      - [ ] Users can update existing terms via the front-end application.
+      - [ ] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
   - [ ] Create an API key for users.
-  - [ ] Use Redux in case the application's scale of state gets very large.
+  - [ ] Count the number of app usage (count every time a translation occurs).
+  - [ ] Configure Azure/back end CORS settings to only allow Read My Brain (one application) to access it.
   - [ ] Share the application by posting in a nursing forum.
-  - [ ] Use a React UI library such as React Semantic UI or Material UI.
   - [ ] Application offers light and dark mode.
+  - [ ] Use Redux in case the application's scale of state gets very large.
+  - [ ] Apply Swagger API or add Views to API for http routes documentation.
+  - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
+  - [x] ~~Use a React UI library such as React Semantic UI or Material UI.~~
   - [x] ~~Use Quill's basic text editor for application UI.~~
   - [x] ~~Apply Quill's toolbar.~~
   - [x] ~~Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.~~
 
-  _Note: Quill does not have an event listener that will help with the live translation feature therefore refactored stretch goals are added._
+  _Note: Quill does not have an event listener that will help with the live translation feature therefore stretch goals were refactored._
 
 </details>
 
@@ -145,6 +149,7 @@ _Coming up soon!_
 * [React](https://reactjs.org/)
 * [Draw.io](https://app.diagrams.net/)
 * Markdown
+* [Google Fonts](https://fonts.google.com/)
 * _npm*_
 
 _*Open `package.json` file to see the complete list of all node modules._
