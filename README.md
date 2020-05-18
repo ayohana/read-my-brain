@@ -185,6 +185,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
 * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 * [Parks in Redux](https://github.com/ayohana/parks-redux.git) - a successful test project for deploying React app using Netlify
+* [CSS-Tricks: Textarea Tricks](https://css-tricks.com/textarea-tricks/)
 
 ### Back End API
 

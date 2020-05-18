@@ -16,6 +16,10 @@ textarea {
   overflow: auto;
 }
 
+textarea:hover {
+  box-shadow: 0px 0px 2px #888888;
+}
+
 .icon {
   border: solid 0.3px #909090;
   border-radius: 60px;

@@ -13,6 +13,12 @@ const iconsContainerStyle = {
 
 function Form(props) {
 
+  const handleAppendToInputText = (charToAppend) => {
+    let input = document.getElementById("inputText");
+    input.innerHTML += charToAppend;
+    console.log(input.innerHTML);
+  }
+
   const handleLiveTranslation = event => {
     event.preventDefault();
     props.onFormSubmit(event.target.value);
@@ -22,7 +28,7 @@ function Form(props) {
     <React.Fragment>
       <div style={formContainerStyle}>
         <div style={iconsContainerStyle}>
-          <CopyToClipboard text="c̅">
+          {/* <CopyToClipboard text="c̅">
             <span className="icon">c̅</span>
           </CopyToClipboard>
           <CopyToClipboard text="ā">
@@ -36,10 +42,15 @@ function Form(props) {
           </CopyToClipboard>
           <CopyToClipboard text="↓">
             <span className="icon">↓</span>
-          </CopyToClipboard>
+          </CopyToClipboard> */}
+          <span className="icon" onClick={() => handleAppendToInputText("c̅")}>c̅</span>
+          <span className="icon" onClick={() => handleAppendToInputText("ā")}>ā</span>
+          <span className="icon" onClick={() => handleAppendToInputText("p̄")}>p̄</span>
+          <span className="icon" onClick={() => handleAppendToInputText("↑")}>↑</span>
+          <span className="icon" onClick={() => handleAppendToInputText("↓")}>↓</span>
         </div>
         <br />
-        <textarea onInput={handleLiveTranslation} type="text" name="inputText" rows="40" placeholder="Write something here..." >
+        <textarea onInput={handleLiveTranslation} type="text" id="inputText" rows="25" placeholder="Write something here...">
         </textarea>
       </div>
     </React.Fragment>
