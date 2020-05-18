@@ -181,13 +181,17 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [AJAX and APIs in React](https://reactjs.org/docs/faq-ajax.html)
 * [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 * [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
-* [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
-* [HTML onmouseup Event](https://www.w3schools.com/jsref/event_onmouseup.asp)
-* [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
+* HTML & CSS
+    * [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
+    * [HTML onmouseup Event](https://www.w3schools.com/jsref/event_onmouseup.asp)
+    * [HTML Clipboard Events](https://www.w3schools.com/jsref/obj_clipboardevent.asp)
+    * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
+    * [CSS-Tricks: Textarea Tricks](https://css-tricks.com/textarea-tricks/)
+    * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
-* [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 * [Parks in Redux](https://github.com/ayohana/parks-redux.git) - a successful test project for deploying React app using Netlify
-* [CSS-Tricks: Textarea Tricks](https://css-tricks.com/textarea-tricks/)
+
+
 
 ### Back End API
 
