@@ -7,6 +7,14 @@ const columnsStyle = {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   gridColumnGap: '10px',
+}
+
+const loadingStyle = {
+  height: '300px',
+  textAlign: 'center',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   // borderColor: 'blue',
   // borderStyle: 'solid'
 }
@@ -47,27 +55,33 @@ function Body() {
     )
   })
 
-  let currentlyVisibleMessage = "";
   if (error) {
-    currentlyVisibleMessage = "Error occurred: {error}";
+    return (
+      <p>Please refresh the page. Brain shut down occurred: {error}</p>
+    )
   } else if (!isLoaded) {
-    currentlyVisibleMessage = "Loading...";
+    return(
+      <React.Fragment>
+        <div style={loadingStyle}>
+          <h3>Powering up brain...</h3>
+        </div>
+      </React.Fragment>
+    )
   } else {
-    currentlyVisibleMessage = "";
+    return (
+      <React.Fragment>
+        <div style={columnsStyle}>
+          <div>
+            <Form onFormSubmit={handleTranslation} />
+          </div>
+          <div>
+            <Translation translation={translation} />
+          </div>
+        </div>
+      </React.Fragment>
+    );
   }
-
-  return (
-    <React.Fragment>
-      <div style={columnsStyle}>
-        <div>
-          <Form onFormSubmit={handleTranslation} />
-        </div>
-        <div>
-          <Translation currentlyVisibleMessage={currentlyVisibleMessage} translation={translation} />
-        </div>
-      </div>
-    </React.Fragment>
-  );
+  
 }
 
 export default Body;
