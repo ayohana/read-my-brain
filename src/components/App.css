@@ -1,4 +1,5 @@
 body {
+  background-color: #fefefa;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -7,6 +8,7 @@ h1 {
 }
 
 input {
+  background-color: #fefefa;
   font-family: 'Patrick Hand', cursive;
   font-size: large;
   border: none;

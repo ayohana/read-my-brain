@@ -59,13 +59,13 @@ Users are primarily going to be **future health providers**, including nursing s
       - [x] Upon submission, the application will call the API to read the sentence.
       - [x] The application will display the returned API response as a string.
 
-  <div align=center>
+<div align=center>
 
-    #### MVP React Component Diagram
+  #### MVP React Component Diagram
 
-    <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
+  <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
 
-  </div>
+</div>
 
 </details>
 
@@ -103,6 +103,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Configure Azure/back end CORS settings to only allow Read My Brain (one application) to access it.
   - [ ] Share the application by posting in a nursing forum.
   - [ ] Application offers light and dark mode.
+  - [ ] Add a blinking text cursor to text editor.
   - [ ] Use Redux in case the application's scale of state gets very large.
   - [ ] Apply Swagger API or add Views to API for http routes documentation.
   - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
@@ -146,10 +147,11 @@ _Coming up soon!_
 * HTML
 * CSS
 * JavaScript
+* Markdown
 * [React](https://reactjs.org/)
 * [Draw.io](https://app.diagrams.net/)
-* Markdown
 * [Google Fonts](https://fonts.google.com/)
+* [React Copy To Clipboard API](https://www.npmjs.com/package/react-copy-to-clipboard)
 * _npm*_
 
 _*Open `package.json` file to see the complete list of all node modules._
@@ -176,6 +178,8 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 * [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 * [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
+* [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
+* [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
 
 ### Back End API
 
