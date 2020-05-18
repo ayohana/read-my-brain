@@ -90,7 +90,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Users can copy special characters and insert them into their input text. For instance, icons c̅ for with, ā for before and p̄ for after.
   - [ ] Insert special characters automatically to input text area on clicking them.
   - [x] Refactor `<input>` to `<textarea>` to enable resizing the text box.
-  - [ ] Add a tooltip for successfully copying/inserting icons.
+  - [x] Display ~~tooltip~~message for successfully copying~~/inserting~~ icons.
   - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
   - [ ] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed).
   - [ ] Refactor React component diagram.
