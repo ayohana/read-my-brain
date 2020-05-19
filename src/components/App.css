@@ -45,6 +45,15 @@ textarea:hover {
   opacity: 0;
 }
 
+.headerLinks {
+  text-decoration: none;
+  color: #0f4c81;
+}
+
+.headerLinks:hover {
+  font-weight: 600;
+}
+
 #aboutContainer {
   text-align: center;
   margin-top: 20px;
@@ -55,14 +64,16 @@ textarea:hover {
   font-family: 'Balsamiq Sans', cursive;
 }
 
-#aboutContainer a {
+#aboutContainer a, h4 {
   margin: 5px;
   padding: 10px;
-  text-decoration: none;
+  text-decoration: underline;
+  color: #0f4c81;
 }
 
-#aboutContainer a:hover {
-  text-shadow: 0.4px 0.4px #888888;
+#aboutContainer a:hover, h4:hover {
+  color: #6492b9;
+  text-decoration: none;
 }
 
 #header {

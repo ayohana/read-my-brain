@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+function App(props) {
 
   return (
     <React.Fragment>
@@ -12,10 +12,11 @@ function App() {
         <h2>Whose Brain?</h2>
         <p>This application aims to empower future nurses and caregivers by helping them understand medical charts quicker, better, easier and less stressful.</p>
 
+        <h4 onClick={() => props.onClickingGetStarted(true)}>Let's get started!</h4>
+
         <h3>Found a bug, broken feature or a brain fart?</h3>
-        <a href="mailto:adela.yohana@gmail.com" target="_blank">Let me know!</a>
-        <br />
-        <a href="https://github.com/ayohana/" target="_blank">Star this project or follow me on GitHub!</a>
+        <h4><a href="mailto:adela.yohana@gmail.com" target="_blank">Let me know!</a></h4>
+        <h4><a href="https://github.com/ayohana/" target="_blank">Star this project or follow me on GitHub!</a></h4>
       </div>
     </React.Fragment>
   );

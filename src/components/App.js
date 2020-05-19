@@ -14,7 +14,7 @@ function App() {
 
   let currentlyVisible = "";
   if (!bodyVisible) {
-    currentlyVisible = <About />;
+    currentlyVisible = <About onClickingGetStarted={handleDisplayDefaultView}/>;
   } else {
     currentlyVisible = <Body />;
   }
