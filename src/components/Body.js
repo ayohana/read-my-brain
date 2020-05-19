@@ -2,26 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Form from './Form';
 import Translation from './Translation';
 
-const bodyContainerStyle = {
-  // backgroundColor: 'rgb(250,250,225)',
-  display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
-  gridColumnGap: '10px',
-  backgroundImage: 'url(../img/clipboard_1.jpg)',
-  borderColor: 'blue',
-  borderStyle: 'solid'
-}
-
-const loadingStyle = {
-  height: '300px',
-  textAlign: 'center',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  animation: 'fadein 1s linear forwards',
-  opacity: '0'
-}
-
 function Body() {
 
   const [error, setError] = useState(null);
@@ -29,7 +9,7 @@ function Body() {
   const [translation, setTranslation] = useState("");
   const [inputToTranslate, setInputToTranslate] = useState("");
 
-  // GET TRANSLATION
+  // GET TRANSLATION =====================================
   const handleTranslation = (inputToTranslate) => {
     setInputToTranslate(inputToTranslate);
   }
@@ -64,7 +44,7 @@ function Body() {
   } else if (!isLoaded) {
     return(
       <React.Fragment>
-        <div style={loadingStyle}>
+        <div id="loading">
           <h3>Powering up brain...</h3>
         </div>
       </React.Fragment>
@@ -72,7 +52,7 @@ function Body() {
   } else {
     return (
       <React.Fragment>
-        <div style={bodyContainerStyle}>
+        <div id="bodyContainer">
           <div>
             <Form onFormSubmit={handleTranslation} />
           </div>

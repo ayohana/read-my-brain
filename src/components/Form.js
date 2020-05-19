@@ -1,25 +1,6 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-const formContainerStyle = {
-  backgroundColor: 'rgb(250,250,225)',
-  margin: '20px'
-}
-
-const iconsContainerStyle = {
-  paddingLeft: '10px',
-  paddingRight: '10px',
-}
-
-const copiedMessageStyle = {
-  color: 'rgb(85,188,255)',
-  marginLeft: '0.5em',
-  fontSize: '0.9em',
-  textShadow: '0.4px 0.4px #888888',
-  animation: 'fadeinout 2s linear forwards',
-  opacity: '0'
-}
-
 function Form(props) {
 
   // TO FIX: ATTEMPT TO APPEND TO INPUT TEXT
@@ -50,8 +31,8 @@ function Form(props) {
 
   return (
     <React.Fragment>
-      <div style={formContainerStyle}>
-        <div style={iconsContainerStyle}>
+      <div id="formContainer">
+        <div id="iconsContainer">
           <CopyToClipboard text="c̅" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">c̅</span>
           </CopyToClipboard>
@@ -70,7 +51,7 @@ function Form(props) {
           <CopyToClipboard text={randomSentence} onMouseDown={() => generateRandomSentence()} onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">Surprise me!</span>
           </CopyToClipboard>
-          {copied ? <span style={copiedMessageStyle}>Copied!</span> : null}
+          {copied ? <span className="copiedMessage">Copied!</span> : null}
           {/* ATTEMPT TO APPEND TO INPUT TEXT: */}
           {/* <span className="icon" onClick={() => handleAppendToInputText("c̅")}>c̅</span>
           <span className="icon" onClick={() => handleAppendToInputText("ā")}>ā</span>
@@ -79,7 +60,7 @@ function Form(props) {
           <span className="icon" onClick={() => handleAppendToInputText("↓")}>↓</span> */}
         </div>
         <br />
-        <textarea onKeyUp={handleLiveTranslation} type="text" id="inputText" rows="10" placeholder="Write something here...">
+        <textarea onKeyUp={handleLiveTranslation}  type="text" id="inputText" rows="10" placeholder="Write something here...">
         </textarea>
       </div>
     </React.Fragment>
