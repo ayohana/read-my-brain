@@ -36,11 +36,14 @@ function Form(props) {
 
   const handleLiveTranslation = event => {
     event.preventDefault();
-    props.onFormSubmit(event.target.value);
+    let keyPressed = event.keyCode;
+    if (keyPressed === 32 || keyPressed === 13) {
+      props.onFormSubmit(event.target.value);
+    }
   }
 
   const generateRandomSentence = () => {
-    const arrSentences = ["84F DNR pt from ED is A&Ox2 c̅ Hx HTN, DM, RTKA. Ax pnc will need CXR STAT!", "99M SNF pt is A&Ox1 c̅ Hx AD, PD, ↓ appetite. Needs 1:1 feed assistance.", "32F POD1 RNY sx needs BG checks ACHS and VS Q4H.", "61M c̅ L hip pain s/p fall. Plan for OR in the AM, PM CHG wipes done, sx consent signed. Ortho MD visited."]
+    const arrSentences = ["84F DNR pt from ED is A&Ox2 c̅ Hx HTN, DM, RTKA. Ax pnc will need CXR STAT!", "99M SNF pt is A&Ox1 c̅ Hx AD, PD, ↓ thyroid, LTKA. Plan to D/C back to SNF.", "32F POD1 RNY sx needs BG checks ACHS and VS Q4H.", "61M c̅ L hip pain s/p fall. Plan for OR in the AM, PM CHG wipes done, sx consent signed. Ortho MD visited."]
     let randomIndex = Math.floor((Math.random() * arrSentences.length));
     setRandomSentence(arrSentences[randomIndex]);
   }
@@ -76,7 +79,7 @@ function Form(props) {
           <span className="icon" onClick={() => handleAppendToInputText("↓")}>↓</span> */}
         </div>
         <br />
-        <textarea onInput={handleLiveTranslation} type="text" id="inputText" rows="10" placeholder="Write something here...">
+        <textarea onKeyUp={handleLiveTranslation} type="text" id="inputText" rows="10" placeholder="Write something here...">
         </textarea>
       </div>
     </React.Fragment>

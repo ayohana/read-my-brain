@@ -94,8 +94,8 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Display ~~tooltip~~message for successfully copying~~/inserting~~ icons.
   - [x] Add CSS animation to display "copied" message.
   - [x] Users can copy the translated result ~~with a click of a button~~by clicking the translated text.
-  - [ ] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
-  - [ ] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed).
+  - [x] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
+  - [x] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed). In other words, trigger the API call when a user presses spacebar or enter.
   - [ ] Refactor React component diagram.
       - [ ] Add an "About" section to the front end.
       - [ ] Add a footer to the front end with a link to my GitHub repo.
