@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Form from './Form';
 import Translation from './Translation';
 
-const columnsStyle = {
-  backgroundColor: 'rgb(250,250,225)',
+const bodyContainerStyle = {
+  // backgroundColor: 'rgb(250,250,225)',
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   gridColumnGap: '10px',
+  backgroundImage: 'url(../img/clipboard_1.jpg)',
+  borderColor: 'blue',
+  borderStyle: 'solid'
 }
 
 const loadingStyle = {
@@ -17,8 +20,6 @@ const loadingStyle = {
   justifyContent: 'center',
   animation: 'fadein 1s linear forwards',
   opacity: '0'
-  // borderColor: 'blue',
-  // borderStyle: 'solid'
 }
 
 function Body() {
@@ -71,7 +72,7 @@ function Body() {
   } else {
     return (
       <React.Fragment>
-        <div style={columnsStyle}>
+        <div style={bodyContainerStyle}>
           <div>
             <Form onFormSubmit={handleTranslation} />
           </div>

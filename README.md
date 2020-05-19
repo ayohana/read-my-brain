@@ -98,11 +98,11 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed). In other words, trigger the API call when a user presses spacebar or enter.
   - [ ] Refactor React component diagram.
       - [ ] Add an "About" section to the front end.
-      - [ ] Add a footer to the front end with a link to my GitHub repo.
-      - [ ] Users can add new terms via the front-end application for open contribution.
-      - [ ] Users can update existing terms via the front-end application.
+      - [ ] Add a link to my GitHub repo.
       - [ ] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
   - [ ] Create an API key for users.
+  - [ ] Users can add new terms via the front-end application for open contribution.
+  - [ ] Users can update existing terms via the front-end application.
   - [ ] Count the number of app usage (count every time a translation occurs).
   - [ ] Configure Azure/back end CORS settings to only allow Read My Brain (one application) to access it.
   - [ ] Share the application by posting in a nursing forum.
@@ -111,6 +111,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Use Redux in case the application's scale of state gets very large.
   - [ ] Apply Swagger API or add Views to API for http routes documentation.
   - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
+  - [ ] Make the front end media responsive.
   - [x] ~~Use a React UI library such as React Semantic UI or Material UI.~~
   - [x] ~~Use Quill's basic text editor for application UI.~~
   - [x] ~~Apply Quill's toolbar.~~
@@ -183,6 +184,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 * HTML & CSS
     * [HTML oninput Event](https://www.w3schools.com/jsref/event_oninput.asp)
+    * [HTML onkeyup Event](https://www.w3schools.com/jsref/event_onkeyup.asp)
     * [HTML onmouseup Event](https://www.w3schools.com/jsref/event_onmouseup.asp)
     * [HTML Clipboard Events](https://www.w3schools.com/jsref/obj_clipboardevent.asp)
     * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
