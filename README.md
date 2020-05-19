@@ -63,7 +63,7 @@ Users are primarily going to be **future health providers**, including nursing s
 
   #### MVP React Component Diagram
 
-<img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
+<img src="./public/mvp-react-component-diagram.png" width=600px alt="MVP React Component Diagram">
 
 </div>
 
@@ -96,9 +96,9 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Users can copy the translated result ~~with a click of a button~~by clicking the translated text.
   - [x] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
   - [x] Refactor API call method in the front end to only call the API as needed (per word instead of per letter typed). In other words, trigger the API call when a user presses spacebar or enter.
-  - [ ] Refactor React component diagram.
-      - [ ] Add an "About" section to the front end.
-      - [ ] Add a link to my GitHub repo.
+  - [x] Refactor React component diagram.
+      - [x] Add an "About" section to the front end.
+      - [x] Add a link to my GitHub repo.
       - [ ] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
   - [ ] Create an API key for users.
   - [ ] Users can add new terms via the front-end application for open contribution.
@@ -123,7 +123,7 @@ Users are primarily going to be **future health providers**, including nursing s
 
   #### Refactored React Component Diagram
 
-<img src="./public/refactored-react-component-diagram.png" width=500px alt="Refactored React Component Diagram">
+<img src="./public/refactored-react-component-diagram.png" width=600px alt="Refactored React Component Diagram">
 
 </div>
 
@@ -200,7 +200,8 @@ _*Open `package.json` file to see the complete list of all node modules._
     * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
 * [Parks in Redux](https://github.com/ayohana/parks-redux.git) - a successful test project for deploying React app using Netlify
-
+* [CSS @keyframes Rule](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
+* [CSS Animation Speed](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
 
 
 ### Back End API

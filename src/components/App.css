@@ -45,11 +45,35 @@ textarea:hover {
   opacity: 0;
 }
 
+#aboutContainer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#aboutContainer h2, h3 {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+#aboutContainer a {
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#aboutContainer a:hover {
+  text-shadow: 0.4px 0.4px #888888;
+}
+
 #header {
   font-family: 'Balsamiq Sans', cursive;
   text-align: center;
   line-height: 80%;
   letter-spacing: 0.1em;
+}
+
+#header:hover {
+  animation: animateheader 2s linear forwards;
 }
 
 #bColor {
@@ -139,5 +163,23 @@ textarea:hover {
 @keyframes fadein {
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes animateheader {
+  20% {
+    color: rgb(83,146,164);
+  }
+  40% {
+    color: rgb(128,174,128);
+  }
+  60% {
+    color: rgb(141,93,137);;
+  }
+  80% {
+    color: rgb(162,115,105);
+  }
+  100% {
+    color: rgb(182,166,110);
   }
 }
