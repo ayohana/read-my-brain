@@ -15,6 +15,8 @@ const loadingStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  animation: 'fadein 1s linear forwards',
+  opacity: '0'
   // borderColor: 'blue',
   // borderStyle: 'solid'
 }
