@@ -32,10 +32,17 @@ function Form(props) {
   // }
 
   const [copied, setCopied] = useState(false);
+  const [randomSentence, setRandomSentence] = useState("");
 
   const handleLiveTranslation = event => {
     event.preventDefault();
     props.onFormSubmit(event.target.value);
+  }
+
+  const generateRandomSentence = () => {
+    const arrSentences = ["84F DNR pt from ED is A&Ox2 c̅ Hx HTN, DM, RTKA. Ax pnc will need CXR STAT!", "99M SNF pt is A&Ox1 c̅ Hx AD, PD, ↓ appetite. Needs 1:1 feed assistance.", "32F POD1 RNY sx needs BG checks ACHS and VS Q4H.", "61M c̅ L hip pain s/p fall. Plan for OR in the AM, PM CHG wipes done, sx consent signed. Ortho MD visited."]
+    let randomIndex = Math.floor((Math.random() * arrSentences.length));
+    setRandomSentence(arrSentences[randomIndex]);
   }
 
   return (
@@ -56,6 +63,9 @@ function Form(props) {
           </CopyToClipboard>
           <CopyToClipboard text="↓" onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
             <span className="icon">↓</span>
+          </CopyToClipboard>
+          <CopyToClipboard text={randomSentence} onMouseDown={() => generateRandomSentence()} onCopy={() => setCopied(true)} onMouseUp={() => setCopied(false)}>
+            <span className="icon">Surprise me!</span>
           </CopyToClipboard>
           {copied ? <span style={copiedMessageStyle}>Copied!</span> : null}
           {/* ATTEMPT TO APPEND TO INPUT TEXT: */}
