@@ -63,7 +63,7 @@ Users are primarily going to be **future health providers**, including nursing s
 
   #### MVP React Component Diagram
 
-  <img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
+<img src="./public/mvp-react-component-diagram.png" width=500px alt="MVP React Component Diagram">
 
 </div>
 
@@ -118,6 +118,14 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] ~~Modify Quill's toolbar by adding an option to insert special characters into user input. For instance, c̅ for with, ā for before and p̄ for after.~~
 
   _Note: Quill does not have an event listener that will help with the live translation feature therefore stretch goals were refactored._
+
+<div align=center>
+
+  #### Refactored React Component Diagram
+
+<img src="./public/refactored-react-component-diagram.png" width=500px alt="Refactored React Component Diagram">
+
+</div>
 
 </details>
 
