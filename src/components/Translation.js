@@ -10,7 +10,12 @@ function Translation(props) {
     <React.Fragment>
       <div id="translationContainer">
         <CopyToClipboard text={props.translation} onCopy={() => setCopiedTranslation(true)} onMouseUp={() => setCopiedTranslation(false)}>
-          <p id="translation">{props.translation}</p>
+          <p id="translationBox">
+            <span id="translationHeader">TRANSLATION</span>
+            <br />
+            <br />
+            <span id="translation">{props.translation}</span>
+          </p>
         </CopyToClipboard>
         {copiedTranslation ? <span className="copiedMessage">Copied translation!</span> : " "}
       </div>

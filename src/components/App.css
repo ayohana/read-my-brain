@@ -1,39 +1,73 @@
 body {
-  background-image: url("../img/wood-pattern.png");
-  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/darkness.png");
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-textarea {
-  background-color:rgba(250,250,225,1);
-  box-shadow: 0px 0px 2px #888888;
-  font-family: 'Patrick Hand', cursive;
-  font-size: x-large;
-  border: none;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  outline: none;
-  resize: vertical;
-  overflow: auto;
+/* Top Navigation Bar ========================= */
+#navbar {
+  background: rgba(0, 0, 0, 0.52);
+  border-bottom: 1px solid #888888;
+  padding: 5px;
 }
 
-textarea:hover {
-  box-shadow: 1px 1px 10px #888888;
+#navbar ul {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+#navbar li {
+  display: inline;
+  margin: 10px;
+}
+
+#header {
+  line-height: 80%;
+  letter-spacing: 0.1em;
+  font-size: larger;
+  font-weight: 600;
+}
+
+#header:hover {
+  animation: animateheader 2s linear forwards;
+  cursor: pointer;
+}
+
+.headerLinks {
+  text-decoration: none;
+  text-shadow: none;
+  color: #369af1;
+}
+
+.headerLinks:hover {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* Form Component ========================== */
+#formContainer {
+  margin: 25px;
+  margin-left: 30px;
+}
+
+#iconsContainer {
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 .icon {
   display: inline-block;
-  background-color:	rgb(245, 212, 245);
-  /* border: solid 0.3px #909090; */
+  background-color:	rgb(37, 37, 37);
   border-radius: 60px;
-  box-shadow: 0px 0px 2px #888888;
+  box-shadow: 0px 0px 4px #888888;
   padding: 0.3em 0.6em;
   margin: 0.3em;
-  font-size: large;
 }
 
 .icon:hover {
-  box-shadow: 1px 1px 8px #888888;
+  background-color: blue;
+  box-shadow: 1px 1px 10px #888888;
   cursor: pointer;
 }
 
@@ -46,20 +80,119 @@ textarea:hover {
   opacity: 0;
 }
 
-.headerLinks, .modalLink {
-  text-decoration: none;
-  color: #0f4c81;
+textarea {
+  font-family: 'Inter', sans-serif;
+  background-color:rgb(22, 22, 22);
+  box-shadow: 0px 0px 2px #888888;
+  font-size: medium;
+  border: none;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  outline: none;
+  resize: vertical;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.headerLinks:hover {
+textarea:hover {
+  box-shadow: 1px 1px 10px #888888;
+}
+
+/* Translation Component ============================ */
+#translationContainer {
+  margin-top: 83px;
+  margin-left: 20px;
+  margin-right: 30px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0px 0px 2px #888888;
+}
+
+#translationHeader {
+  color: #369af1;
+}
+
+#translationBox {
+  padding: 10px;
+}
+
+#translation:hover {
+  color: rgba(0, 0, 255, 0.95);
   font-weight: 600;
   cursor: pointer;
+}
+
+/* Modal Component ============================ */
+#modalContainer {
+  background-color: rgb(19, 19, 19);
+  opacity: 0.6;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 31%;
+}
+
+#modalHeader {
+  background-image: url('../img/dark_geometric.png');
+  padding: 1px;
+}
+
+#closeIcon {
+  float: right;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 5px;
+  padding-right: 12px;
+}
+
+#closeIcon:hover {
+  color: #1780dd;
+  cursor: pointer;
+}
+
+#modalHeaderText {
+  padding-left: 30px;
+  text-shadow: 0px 0px 1px #b9b1b1;
+}
+
+#modalContent {
+  padding: 5px 30px;
+  text-shadow: 0px 0px 2px #b9b1b1;
+}
+
+.modalLink {
+  text-decoration: none;
+  text-shadow: none;
+  color: #1183e7;
+  font-weight: 600;
+}
+
+.modalLink:hover {
+  text-shadow: 0px 0px 1px #b9b8b8;
+}
+
+#appName {
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+#appName:hover {
+  animation: animateheader 2s linear forwards;
 }
 
 .modalLink:hover {
   color: #1780dd;
   cursor: pointer;
 }
+
+
+
+
 
 #appContainer {
   animation: fadein 2s linear forwards;
@@ -72,10 +205,6 @@ textarea:hover {
   padding: 20px;
   animation: fadein 1s linear forwards;
   opacity: 0
-}
-
-#aboutContainer h2, h3 {
-  font-family: 'Balsamiq Sans', cursive;
 }
 
 #aboutContainer a, h4 {
@@ -91,44 +220,6 @@ textarea:hover {
   cursor: pointer;
 }
 
-#header {
-  font-family: 'Balsamiq Sans', cursive;
-  text-align: center;
-  line-height: 80%;
-  letter-spacing: 0.1em;
-}
-
-#header:hover {
-  animation: animateheader 2s linear forwards;
-  cursor: pointer;
-}
-
-#bColor {
-  color: rgb(83,146,164);
-}
-
-#rColor {
-  color: rgb(128,174,128);
-}
-
-#aColor {
-  color: rgb(162,115,105);
-}
-
-#iColor {
-  color: rgb(141,93,137);
-}
-
-#nColor {
-  color: rgb(182,166,110);
-}
-
-#subheader {
-  font-family: 'Roboto', sans-serif;
-  font-size: smaller;
-  text-align: center;
-  line-height: 0%;
-}
 
 #bodyContainer {
   display: grid;
@@ -138,14 +229,7 @@ textarea:hover {
   opacity: 0
 }
 
-#formContainer {
-  margin: 20px;
-}
 
-#iconsContainer {
-  padding-left: 5px;
-  padding-right: 10px;
-}
 
 #loading {
   height: 300px;
@@ -157,61 +241,10 @@ textarea:hover {
   opacity: 0;
 }
 
-#translationContainer {
-  margin-top: 83px;
-  margin-right: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: rgba(178,212,242,1);
-  box-shadow: 0px 0px 5px #888888;
-}
 
-#translation:hover {
-  text-shadow: 0.5px 0.5px #888888;
-  cursor: pointer;
-}
 
-#modalContainer {
-  background-color: rgb(0,0,0,0.4);
-  color: black;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  overflow: auto;
-  width: 100%;
-  height: 25%;
-}
 
-#modalContent {
-  padding: 5px 20px;
-}
-
-#modalContent h2 {
-  color: rgb(24, 112, 79);
-  text-shadow: 1px 1px 4px #b9b1b1;
-}
-
-#modalContent h3 {
-  color: rgb(53, 38, 52);
-  text-shadow: 0px 0px 1px #b9b1b1;
-}
-
-#closeIcon {
-  float: right;
-  font-size: x-large;
-  font-weight: bold;
-}
-
-#closeIcon:hover {
-  color: white;
-  cursor: pointer;
-}
-
+/* Keyframes =================================== */
 @keyframes fadeinout {
   10% {
     opacity: 1;
