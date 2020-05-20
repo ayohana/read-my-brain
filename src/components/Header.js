@@ -10,7 +10,7 @@ function Header(props) {
         <span id="iColor">i</span>
         <span id="nColor">n</span>
       </h1>
-      <p id="subheader"><span className="headerLinks" onClick={() => props.onClickingHeaderContent(false)}>about</span> | by <a className="headerLinks" href="https://github.com/ayohana/" target="_blank">ayohana</a> © 2020 </p>
+      <p id="subheader"><span className="headerLinks" onClick={() => props.onClickingHeaderContent(false)}>About</span> | by <a className="headerLinks" href="https://github.com/ayohana/" target="_blank">ayohana</a> © 2020 </p>
     </React.Fragment>
   );
 }
