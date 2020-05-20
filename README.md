@@ -150,12 +150,13 @@ No known bugs at this time.
 
 ## Screenshots
 
-<!-- API Database Structure:
+<div align=center>
 
-![Read My Brain API's Database Structure created using Draw.io](./Images/read-my-brain-api-database-structure.png/) -->
+  #### Initial Prototype:
 
-_Coming up soon!_
+<img src="./public/read-my-brain-prototype.gif" width=600px alt="Refactored React Component Diagram">
 
+</div>
 
 ## Technologies
 
