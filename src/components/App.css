@@ -141,7 +141,7 @@ textarea:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadein 1s linear forwards;
+  animation: fadein 1s linear forwards infinite;
   opacity: 0;
 }
 
