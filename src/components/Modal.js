@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Modal(props) {
   return (
@@ -16,6 +17,10 @@ function Modal(props) {
       </div>
     </React.Fragment>
   );
+}
+
+Modal.propTypes = {
+  onClosingModal: PropTypes.func
 }
 
 export default Modal;

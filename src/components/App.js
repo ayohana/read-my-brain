@@ -7,23 +7,16 @@ import './App.css';
 function App() {
 
   const [bodyVisible, setBodyVisible] = useState(true);
-
+  
   const handleDisplayDefaultView = (boolean) => {
     setBodyVisible(boolean);
-  }
-
-  let currentlyVisible = "";
-  if (!bodyVisible) {
-    currentlyVisible = <About onClickingGetStarted={handleDisplayDefaultView}/>;
-  } else {
-    currentlyVisible = <Body />;
   }
 
   return (
     <React.Fragment>
       <div id="appContainer">
         <Header onClickingHeaderContent={handleDisplayDefaultView} />
-        {currentlyVisible}
+        {bodyVisible ? <Body /> : <About onClickingGetStarted={handleDisplayDefaultView}/>}
       </div>
     </React.Fragment>
   );

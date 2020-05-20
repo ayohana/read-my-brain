@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Header(props) {
   return (
@@ -13,6 +14,10 @@ function Header(props) {
       </div>
     </React.Fragment>
   );
+}
+
+Header.propTypes = {
+  onClickingHeaderContent: PropTypes.func
 }
 
 export default Header;

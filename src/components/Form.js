@@ -1,16 +1,8 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import PropTypes from 'prop-types';
 
 function Form(props) {
-
-  // TO FIX: ATTEMPT TO APPEND TO INPUT TEXT
-  // HANDLER WORKS WHEN THE TEXT AREA IS EMPTY
-  // DOES NOT APPEND AFTER TEXT INPUT IS EDITED
-  // const handleAppendToInputText = (charToAppend) => {
-  //   let input = document.getElementById("inputText");
-  //   input.innerHTML += charToAppend;
-  //   console.log(input.innerHTML);
-  // }
 
   const [copied, setCopied] = useState(false);
   const [randomSentence, setRandomSentence] = useState("");
@@ -52,12 +44,6 @@ function Form(props) {
             <span className="icon">Surprise me!</span>
           </CopyToClipboard>
           {copied ? <span className="copiedMessage">Copied!</span> : null}
-          {/* ATTEMPT TO APPEND TO INPUT TEXT: */}
-          {/* <span className="icon" onClick={() => handleAppendToInputText("c̅")}>c̅</span>
-          <span className="icon" onClick={() => handleAppendToInputText("ā")}>ā</span>
-          <span className="icon" onClick={() => handleAppendToInputText("p̄")}>p̄</span>
-          <span className="icon" onClick={() => handleAppendToInputText("↑")}>↑</span>
-          <span className="icon" onClick={() => handleAppendToInputText("↓")}>↓</span> */}
         </div>
         <br />
         <textarea onKeyUp={handleLiveTranslation}  type="text" id="inputText" rows="10" placeholder="Write something here...">
@@ -65,6 +51,10 @@ function Form(props) {
       </div>
     </React.Fragment>
   );
+}
+
+Form.propTypes = {
+  onFormSubmit: PropTypes.func
 }
 
 export default Form;

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function App(props) {
-
   return (
     <React.Fragment>
       <div id="aboutContainer">
@@ -20,6 +20,10 @@ function App(props) {
       </div>
     </React.Fragment>
   );
+}
+
+App.propTypes = {
+  onClickingGetStarted: PropTypes.func
 }
 
 export default App;
