@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Form from './Form';
 import Translation from './Translation';
+import Modal from './Modal';
 
 function Body() {
 
@@ -8,6 +9,7 @@ function Body() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [translation, setTranslation] = useState("");
   const [inputToTranslate, setInputToTranslate] = useState("");
+  const [privacyAgreement, setPrivacyAgreement] = useState(false);
 
   // GET TRANSLATION =====================================
   const handleTranslation = (inputToTranslate) => {
@@ -37,6 +39,9 @@ function Body() {
     )
   })
 
+  let modalVisible = null;
+  privacyAgreement ? modalVisible = null : modalVisible = <Modal onClosingModal={setPrivacyAgreement} />;
+
   if (error) {
     return (
       <p>Please refresh the page. Brain shut down occurred: {error}</p>
@@ -60,6 +65,7 @@ function Body() {
             <Translation translation={translation} />
           </div>
         </div>
+        {modalVisible}
       </React.Fragment>
     );
   }

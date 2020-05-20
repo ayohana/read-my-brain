@@ -34,6 +34,7 @@ textarea:hover {
 
 .icon:hover {
   box-shadow: 1px 1px 8px #888888;
+  cursor: pointer;
 }
 
 .copiedMessage {
@@ -45,13 +46,24 @@ textarea:hover {
   opacity: 0;
 }
 
-.headerLinks {
+.headerLinks, .modalLink {
   text-decoration: none;
   color: #0f4c81;
 }
 
 .headerLinks:hover {
   font-weight: 600;
+  cursor: pointer;
+}
+
+.modalLink:hover {
+  color: #1780dd;
+  cursor: pointer;
+}
+
+#appContainer {
+  animation: fadein 2s linear forwards;
+  opacity: 0
 }
 
 #aboutContainer {
@@ -76,6 +88,7 @@ textarea:hover {
 #aboutContainer a:hover, h4:hover {
   color: #6492b9;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #header {
@@ -87,6 +100,7 @@ textarea:hover {
 
 #header:hover {
   animation: animateheader 2s linear forwards;
+  cursor: pointer;
 }
 
 #bColor {
@@ -158,11 +172,34 @@ textarea:hover {
 
 #translation:hover {
   text-shadow: 0.5px 0.5px #888888;
+  cursor: pointer;
 }
 
-#appContainer {
-  animation: fadein 2s linear forwards;
-  opacity: 0
+#modalContainer {
+  background-color: rgb(0,0,0,0.4);
+  color: black;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+  height: 25%;
+}
+
+#modalContent {
+  padding: 5px 20px;
+}
+
+#closeIcon {
+  float: right;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#closeIcon:hover {
+  color: white;
+  cursor: pointer;
 }
 
 @keyframes fadeinout {
