@@ -201,7 +201,7 @@ _*Open `package.json` file to see the complete list of all node modules._
     * [HTML onkeyup Event](https://www.w3schools.com/jsref/event_onkeyup.asp)
     * [HTML onmouseup Event](https://www.w3schools.com/jsref/event_onmouseup.asp)
     * [HTML Clipboard Events](https://www.w3schools.com/jsref/obj_clipboardevent.asp)
-    * [Discussion: <i> vs <span> HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
+    * [Discussion: `<i>` vs `<span>` HTML tags for icons](https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span)
     * [CSS-Tricks: Textarea Tricks](https://css-tricks.com/textarea-tricks/)
     * [Generic Anatomy Colors](https://www.slicer.org/wiki/Slicer3:2010_GenericAnatomyColors)
 * [Copy-to-clipboard React component](https://github.com/nkbt/react-copy-to-clipboard)
