@@ -112,6 +112,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [ ] Apply Swagger API or add Views to API for http routes documentation.
   - [ ] The API can translate the vice versa (from layman’s terms to nursing jargons).
   - [ ] Make the front end media responsive.
+  - [ ] Add functionality to enable uploading a document and the app will translate the whole document.
   - [x] ~~Use a React UI library such as React Semantic UI or Material UI.~~
   - [x] ~~Use Quill's basic text editor for application UI.~~
   - [x] ~~Apply Quill's toolbar.~~
@@ -121,9 +122,13 @@ Users are primarily going to be **future health providers**, including nursing s
 
 <div align=center>
 
-  #### Refactored React Component Diagram
+  #### Refactored React Component Diagram (1st version)
 
 <img src="./public/refactored-react-component-diagram.png" width=600px alt="Refactored React Component Diagram">
+
+  #### Refactored React Component Diagram (2nd version)
+
+<img src="./public/refactored-v2-react-component-diagram.png" width=600px alt="Refactored React Component Diagram">
 
 </div>
 
@@ -202,7 +207,7 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [Parks in Redux](https://github.com/ayohana/parks-redux.git) - a successful test project for deploying React app using Netlify
 * [CSS @keyframes Rule](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
 * [CSS Animation Speed](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
-
+* [Subtle Background Patterns](https://www.toptal.com/designers/subtlepatterns/)
 
 ### Back End API
 
