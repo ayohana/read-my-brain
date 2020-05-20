@@ -7,7 +7,7 @@ function Body() {
 
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [translation, setTranslation] = useState("");
+  const [translation, setTranslation] = useState(null);
   const [inputToTranslate, setInputToTranslate] = useState("");
   const [privacyAgreement, setPrivacyAgreement] = useState(false);
 
@@ -39,9 +39,6 @@ function Body() {
     )
   })
 
-  let modalVisible = null;
-  privacyAgreement ? modalVisible = null : modalVisible = <Modal onClosingModal={setPrivacyAgreement} />;
-
   if (error) {
     return (
       <p>Please refresh the page. Brain shut down occurred: {error}</p>
@@ -62,10 +59,10 @@ function Body() {
             <Form onFormSubmit={handleTranslation} />
           </div>
           <div>
-            <Translation translation={translation} />
+            {translation ? <Translation translation={translation} /> : null}
           </div>
         </div>
-        {modalVisible}
+        {privacyAgreement ? null : <Modal onClosingModal={setPrivacyAgreement} />}
       </React.Fragment>
     );
   }

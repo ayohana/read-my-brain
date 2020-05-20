@@ -99,7 +99,7 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Refactor React component diagram.
       - [x] Add an "About" section to the front end.
       - [x] Add a link to my GitHub repo.
-      - [ ] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
+      - [x] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
   - [ ] Create an API key for users.
   - [ ] Users can add new terms via the front-end application for open contribution. However, users will need an API key in order to do this.
   - [ ] Users can update existing terms via the front-end application.
