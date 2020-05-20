@@ -100,13 +100,14 @@ Users are primarily going to be **future health providers**, including nursing s
       - [x] Add an "About" section to the front end.
       - [x] Add a link to my GitHub repo.
       - [x] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
+  - [x] Application offers dark mode.
   - [ ] Create an API key for users.
   - [ ] Users can add new terms via the front-end application for open contribution. However, users will need an API key in order to do this.
   - [ ] Users can update existing terms via the front-end application.
   - [ ] Count the number of app usage (count every time a translation occurs).
   - [ ] Configure Azure/back end CORS settings to only allow Read My Brain (one application) to access it.
   - [ ] Share the application by posting in a nursing forum.
-  - [ ] Application offers light and dark mode.
+  - [ ] Application offers light mode.
   - [ ] Add a blinking text cursor to text editor.
   - [ ] Use Redux in case the application's scale of state gets very large.
   - [ ] Apply Swagger API or add Views to API for http routes documentation.

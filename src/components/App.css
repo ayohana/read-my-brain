@@ -4,7 +4,24 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Top Navigation Bar ========================= */
+/* App Component ============================== */
+#appContainer {
+  animation: fadein 2s linear forwards;
+  opacity: 0
+}
+
+/* Loading Screen ============================== */
+#loading {
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadein 1s linear forwards infinite;
+  opacity: 0;
+}
+
+/* Header component =========================== */
 #navbar {
   background: rgba(0, 0, 0, 0.52);
   border-bottom: 1px solid #888888;
@@ -45,7 +62,16 @@ body {
   cursor: pointer;
 }
 
-/* Form Component ========================== */
+/* Body Component =============================== */
+#bodyContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 10px;
+  animation: fadein 2s linear forwards;
+  opacity: 0
+}
+
+/* Form Component ========================= */
 #formContainer {
   margin: 25px;
   margin-left: 30px;
@@ -108,6 +134,8 @@ textarea:hover {
   padding-bottom: 20px;
   background-color: rgb(22, 22, 22);
   box-shadow: 0px 0px 2px #888888;
+  animation: fadein 0.5s linear forwards;
+  opacity: 0
 }
 
 #translationHeader {
@@ -135,6 +163,8 @@ textarea:hover {
   overflow: auto;
   width: 100%;
   height: 31%;
+  animation: fadein 1s linear forwards;
+  opacity: 0
 }
 
 #modalHeader {
@@ -176,12 +206,12 @@ textarea:hover {
   text-shadow: 0px 0px 1px #b9b8b8;
 }
 
-#appName {
+.appName {
   font-weight: bolder;
   letter-spacing: 0.1em;
 }
 
-#appName:hover {
+.appName:hover {
   animation: animateheader 2s linear forwards;
 }
 
@@ -190,15 +220,7 @@ textarea:hover {
   cursor: pointer;
 }
 
-
-
-
-
-#appContainer {
-  animation: fadein 2s linear forwards;
-  opacity: 0
-}
-
+/* About Component ============================= */
 #aboutContainer {
   text-align: center;
   margin-top: 20px;
@@ -208,10 +230,11 @@ textarea:hover {
 }
 
 #aboutContainer a, h4 {
-  margin: 5px;
-  padding: 10px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #0f4c81;
+}
+#aboutContainer h4 {
+  padding: 10px;
 }
 
 #aboutContainer a:hover, h4:hover {
@@ -219,30 +242,6 @@ textarea:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
-
-#bodyContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column: 10px;
-  animation: fadein 1s linear forwards;
-  opacity: 0
-}
-
-
-
-#loading {
-  height: 300px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadein 1s linear forwards infinite;
-  opacity: 0;
-}
-
-
-
 
 /* Keyframes =================================== */
 @keyframes fadeinout {
