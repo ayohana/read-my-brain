@@ -82,16 +82,15 @@ Users are primarily going to be **future health providers**, including nursing s
   - [x] Enable querying special characters. For instance, c̅ for with, ā for before and p̄ for after.
   - [x] Deploy API's database via Azure.
   - [x] Deploy the back-end API via Azure.
-  - [ ] Deploy the front-end application via Firebase/Netlify.
+  - [x] Deploy the front-end application via Firebase/Netlify.
   - [x] Users can enter longer sentences (max 200 characters per sentence).
   - [x] Users can enter a paragraph (max 1000 characters).
   - [x] There's an unlimited number of characters a user can enter.
   - [x] The API can translate live/real-time.
   - [x] Users can copy special characters and insert them into their input text. For instance, icons c̅ for with, ā for before and p̄ for after.
   - [x] Use custom CSS styling instead of styling libraries.
-  - [ ] Insert special characters automatically to input text area on clicking them.
   - [x] Refactor `<input>` to `<textarea>` to enable resizing the text box.
-  - [x] Display ~~tooltip~~message for successfully copying~~/inserting~~ icons.
+  - [x] Display message for successfully copying icons.
   - [x] Add CSS animation to display "copied" message.
   - [x] Users can copy the translated result ~~with a click of a button~~by clicking the translated text.
   - [x] Add functionality to generate random sentences in the front end so that users can test/use the app right away.
@@ -101,6 +100,7 @@ Users are primarily going to be **future health providers**, including nursing s
       - [x] Add a link to my GitHub repo.
       - [x] Warn users to be careful when translating real patient or personal identity information to prevent violating their privacy (HIPAA).
   - [x] Application offers dark mode.
+  - [ ] Insert special characters automatically to input text area on clicking them.
   - [ ] Create an API key for users.
   - [ ] Users can add new terms via the front-end application for open contribution. However, users will need an API key in order to do this.
   - [ ] Users can update existing terms via the front-end application.
@@ -144,6 +144,8 @@ Users are primarily going to be **future health providers**, including nursing s
 No known bugs at this time.
 
 ## Installation Instructions
+
+Visit the deployed app by clicking [here](https://readmybrain.netlify.app/)!
 
 ### For Local Development
 

@@ -12,7 +12,7 @@ function App(props) {
         <h2>Whose Brain?</h2>
         <p>This application aims to empower future nurses and caregivers by helping them understand medical charts quicker, better, easier and less stressful!</p>
 
-        <h4 onClick={() => props.onClickingGetStarted(true)}>Start <span className="appName">readmybrain</span> now!</h4>
+        <h4 onClick={() => props.onClickingGetStarted(true)}>Start firing your synapses to <span className="appName">readmybrain</span> now!</h4>
 
         <h3>Found a bug, broken feature or a brain fart?</h3>
         <h4><a href="mailto:adela.yohana@gmail.com" target="_blank" rel="noopener noreferrer">Let me know!</a></h4>
