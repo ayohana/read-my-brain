@@ -131,6 +131,10 @@ Users are primarily going to be **future health providers**, including nursing s
 
 <img src="./public/refactored-v2-react-component-diagram.png" width=600px alt="Refactored React Component Diagram">
 
+  #### Initial Prototype:
+
+<img src="./public/read-my-brain-prototype.gif" width=600px alt="Refactored React Component Diagram">
+
 </div>
 
 </details>
@@ -153,9 +157,25 @@ No known bugs at this time.
 
 <div align=center>
 
-  #### Initial Prototype:
+  #### About Page
 
-<img src="./public/read-my-brain-prototype.gif" width=600px alt="Refactored React Component Diagram">
+<img src="./public/read-my-brain-about.gif" width=600px alt="readmybrain's About Page">
+
+  #### Reading a Brain
+
+<img src="./public/read-my-brain-translate.gif" width=600px alt="Reading a Brain">
+
+  #### Copy Translation
+
+<img src="./public/read-my-brain-copy-translation.gif" width=600px alt="Copy Translation">
+
+  #### Loading Screen
+
+<img src="./public/read-my-brain-loading.gif" width=600px alt="readmybrain's Loading Screen">
+
+  #### Dismiss Privacy Agreement Modal
+
+<img src="./public/read-my-brain-modal-dismiss.gif" width=600px alt="Dismiss readmybrain's Privacy Agreement Modal">
 
 </div>
 
@@ -210,6 +230,10 @@ _*Open `package.json` file to see the complete list of all node modules._
 * [CSS @keyframes Rule](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
 * [CSS Animation Speed](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
 * [Subtle Background Patterns](https://www.toptal.com/designers/subtlepatterns/)
+* [CSS Navigation Bar](https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal)
+* [9 tips to quickly improve your UI designs](https://uxdesign.cc/9-simple-tips-to-improve-your-ui-designs-fast-377c5113ac82)
+* [8 Tips for Dark Theme Design](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6)
+* [7 Practical Tips for Cheating at Design](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
 
 ### Back End API
 
