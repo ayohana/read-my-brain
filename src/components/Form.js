@@ -10,7 +10,7 @@ function Form(props) {
   const handleLiveTranslation = event => {
     event.preventDefault();
     let keyPressed = event.keyCode;
-    if (keyPressed === 32 || keyPressed === 13) {
+    if (keyPressed === 32 || keyPressed === 13 || keyPressed === 86) {
       props.onFormSubmit(event.target.value);
     }
   }
@@ -46,7 +46,7 @@ function Form(props) {
           {copied ? <span className="copiedMessage">Copied!</span> : null}
         </div>
         <br />
-        <textarea onKeyUp={handleLiveTranslation}  type="text" id="inputText" rows="10" placeholder="Write something here...">
+        <textarea onKeyUp={handleLiveTranslation}  type="text" id="inputText" rows="10" placeholder="Quickstart: Click 'Surprise Me!' to copy then paste it here!">
         </textarea>
       </div>
     </React.Fragment>
