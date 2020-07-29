@@ -2,7 +2,7 @@
 
 # [Read My Brain](https://github.com/ayohana/read-my-brain.git/)
 
-#### Capstone Project for [Epicodus](https://www.epicodus.com/), 05.15.2020 - _present_
+#### Capstone Project for [Epicodus](https://www.epicodus.com/), 05.15.2020 - 05.21.2020
 
 #### By [**Adela Darmansyah**](https://github.com/ayohana/)
 
@@ -145,8 +145,6 @@ No known bugs at this time.
 
 ## Installation Instructions
 
-Visit the deployed app by clicking [here](https://readmybrain.netlify.app/)!
-
 ### For Local Development
 
 * Clone this [repository](https://github.com/ayohana/read-my-brain.git/)
@@ -154,6 +152,8 @@ Visit the deployed app by clicking [here](https://readmybrain.netlify.app/)!
   * `cd read-my-brain` to navigate into the repository.
   * `npm install` to install all necessary plug-ins.
   * `npm start` to start the application.
+  
+_Note: Unfortunately, the deployed app has been shut down due to expired free Azure membership. Please see screenshots below for a preview of the app! Thanks for visiting!_
 
 ## Screenshots
 
